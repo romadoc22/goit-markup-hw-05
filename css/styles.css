@@ -329,7 +329,7 @@ ul {
   color: var(--title-tex-color);
 }
 
-/* Чим ми займаємось */
+/* Зразки роботи */
 
 .section-examples {
   padding-top: 0;
@@ -353,6 +353,32 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.item-example {
+  position: relative;
+}
+
+.item-box {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.p-box {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 /* Наша команда */
@@ -563,6 +589,51 @@ a {
 .filter {
   display: flex;
   justify-content: center;
+}
+
+.potfolio-img {
+  display: block;
+  position: relative;
+}
+
+.img-pg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.potfolio-img::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.img-text {
+  display: inline-block;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--pimary-white-color);
+
+  opacity: 0;
+}
+
+.img-text:hover,
+.potfolio-img:hover::before {
+  opacity: 1;
 }
 
 /* Клієнти */
