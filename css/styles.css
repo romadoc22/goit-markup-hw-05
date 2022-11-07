@@ -465,7 +465,7 @@ ul {
 
 .item-clients:hover,
 .item-clients:focus,
-.icon-clients:hover svg {
+.icon-clients:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
